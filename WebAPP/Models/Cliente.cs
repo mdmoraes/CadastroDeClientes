@@ -16,14 +16,17 @@ namespace WebAPP.Models
         [Display(Name = "CPF")]
         [DisplayFormat(DataFormatString = "{0:###.###.###-##}")]
         public string Cpf { get; set; } = null!;
+        
         [Column("nome")]
         [Unicode(false)]
         [Display(Name = "Nome")]
         public string Nome { get; set; } = null!;
+        
         [Column("dataNascimento", TypeName = "date")]
         [Display(Name = "Data Nasc.")]
         [DataType(DataType.Date)]
         public DateTime DataNascimento { get; set; }
+
         [Column("sexo")]
         [StringLength(1)]
         [Unicode(false)]

@@ -17,10 +17,12 @@ namespace WebAPP.Models
         [Key]
         [Column("cidadeId")]
         public int CidadeId { get; set; }
+        
         [Column("nome")]
         [Unicode(false)]
         [Display(Name = "Cidade")]
         public string Nome { get; set; } = null!;
+       
         [Column("estadoId")]
         public int EstadoId { get; set; }
 
